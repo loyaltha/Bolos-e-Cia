@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'; // Removi o BrowserRouter daqui
+import { Routes, Route } from 'react-router-dom'; 
 import { CartProvider } from './contexts/CartContext'; 
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -13,7 +13,6 @@ import { PoliticaPrivacidade } from './pages/PoliticaPrivacidade';
 function App() {
   return (
     <CartProvider>
-      {/* O BrowserRouter foi removido daqui porque já está no main.tsx */}
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
@@ -34,3 +33,4 @@ function App() {
 }
 
 export default App;
+
